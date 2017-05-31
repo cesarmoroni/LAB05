@@ -28,7 +28,7 @@ namespace LAB05.Droid
     [IntentFilter(new string[] { Gcm.Client.Constants.INTENT_FROM_GCM_LIBRARY_RETRY }, Categories = new string[] { "@PACKAGE_NAME@" })]
     public class PushHandlerBroadcastReceiver : GcmBroadcastReceiverBase<GcmService>
     {
-        public static string[] SENDER_IDS = new string[] { "96302500398" };
+        public static string[] SENDER_IDS = new string[] { "963025003980" };
     }
     [Service]
     public class GcmService : GcmServiceBase
