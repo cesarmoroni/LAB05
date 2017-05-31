@@ -26,6 +26,7 @@ namespace LAB05.Droid
     [IntentFilter(new string[] { Gcm.Client.Constants.INTENT_FROM_GCM_MESSAGE }, Categories = new string[] { "@PACKAGE_NAME@" })]
     [IntentFilter(new string[] { Gcm.Client.Constants.INTENT_FROM_GCM_REGISTRATION_CALLBACK }, Categories = new string[] { "@PACKAGE_NAME@" })]
     [IntentFilter(new string[] { Gcm.Client.Constants.INTENT_FROM_GCM_LIBRARY_RETRY }, Categories = new string[] { "@PACKAGE_NAME@" })]
+
     public class PushHandlerBroadcastReceiver : GcmBroadcastReceiverBase<GcmService>
     {
         public static string[] SENDER_IDS = new string[] { "963025003980" };
@@ -64,7 +65,7 @@ namespace LAB05.Droid
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine(ex.Message);
+                System.Diagnostics.Debug.WriteLine(ex.Message); 
                 Debugger.Break();
             }
         }
